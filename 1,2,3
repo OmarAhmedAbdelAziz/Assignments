@@ -1,0 +1,45 @@
+
+#Assingment1 10 minutes for solving
+my_list=[1,2,2,3,4,5,5,6,7,7,8,9]
+def mean(my_list):
+    i=0;sum=0
+    while i<len(my_list):
+        sum+=my_list[i]
+        i+=1
+    print("Mean= ",sum/len(my_list))
+mean(my_list)
+
+#Assignment2 10 minutes for solving
+my_list1=[1,2,2,3,4,5,6,7,7,8,9,9]
+def median(my_list1):
+    x=len(my_list1)
+    if x%2==0:
+        x=(len(my_list1))//2
+        y=((len(my_list1)//2))+1
+        median1=((my_list1[x-1] + my_list1[y-1])) / 2
+        print("Median= ",median1)
+    else:
+        a=((len(my_list1)))//2
+        print("Median= ",my_list1[a])
+median(my_list1)
+
+#Assignment3  4 hours solving and also there is a problem :(
+import collections
+my_list2=[1,2,2,3,4,5,5,5,6,7,7,8]
+def mode(my_list2):
+   data = collections.Counter(my_list2)
+   frequecny= dict(data)
+   print(frequecny)
+   i=0
+   max=frequecny[0]
+   while i<len(frequecny):
+       if frequecny[i]>max:
+         max=frequecny[i]
+   i+=1
+print("Mode=",max)
+mode(my_list2)
+
+
+
+
+
